@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste - Consumo API</title>
+</head>
+<body>
+    <h1>Livros:</h1>
+    <div class="livros"></div>
+    <br>
+    <h1>Pesquisar livros por ID:</h1>
+    <!-- Formulário para javascript -->
+    <form class="pesquisa-form" action="" method="get">
+        <label for="idget">Digite o ID do Livro:</label>
+        <input type="text" name="idget" id="idget">
+        <input type="submit" value="Pesquisar">
+    </form>
+    <div>
+        <h2>Resultado da pesquisa:</h2>
+        <div class="livro" id="resultadoPesquisa">O resultado aparecerá aqui.</div>
+    </div>
+    <h1>Adicionar um Livro:</h1>
+    <!-- Formulário para javascript -->
+    <form action="" method="post">
+        <label for="titulopost">Digite o título do livro:</label>
+        <input type="text" name="titulopost" id="titulopost" placeholder="Título">
+        <label for="autor"></label>
+        <input type="text" name="autorpost" id="autorpost" placeholder="Autor">
+        <input type="submit" value="Adicionar">
+    </form>
+    <div>
+        <h2>Resultado da adição:</h2>
+        <div class="adicionar"></div>
+    </div>
+    <h1>Atualizar um Livro:</h1>
+    <!-- Formulário para javascript -->
+    <form action="" method="put">
+        <label for="idput">Digite o ID do Livro:</label>
+        <input type="text" name="idput" id="idput" placeholder="ID">
+        <label for="titulo">Digite o título do livro:</label>
+        <input type="text" name="tituloput" id="tituloput" placeholder="Título">
+        <label for="autor"></label>
+        <input type="text" name="autorput" id="autorput" placeholder="Autor">
+        <input type="submit" value="Atualizar">
+    </form>
+    <div>
+        <h2>Resultado da atualização:</h2>
+        <div class="atualizar"></div>
+    </div>
+    <h1>Deletar um Livro:</h1>
+    <!-- Formulário para javascript -->
+    <form action="" method="delete">
+        <label for="iddelete">Digite o ID do Livro:</label>
+        <input type="text" name="iddelete" id="iddelete" placeholder="ID">
+        <input type="submit" value="Deletar">
+    </form>
+    <div>
+        <h2>Resultado da deleção:</h2>
+        <div class="deletar"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
