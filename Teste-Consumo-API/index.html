@@ -23,7 +23,9 @@
     </div>
     <h1>Adicionar um Livro:</h1>
     <!-- Formulário para javascript -->
-    <form action="" method="post">
+    <form class="adicao-form" action="" method="post">
+        <label for="idpost">Digite o ID do Livro:</label>
+        <input type="number" name="idpost" id="idpost">
         <label for="titulopost">Digite o título do livro:</label>
         <input type="text" name="titulopost" id="titulopost" placeholder="Título">
         <label for="autor"></label>
@@ -32,11 +34,11 @@
     </form>
     <div>
         <h2>Resultado da adição:</h2>
-        <div class="adicionar"></div>
+        <div class="adicionar" id="resultadoAdicao"></div>
     </div>
     <h1>Atualizar um Livro:</h1>
     <!-- Formulário para javascript -->
-    <form action="" method="put">
+    <form class="att-form" action="" method="put">
         <label for="idput">Digite o ID do Livro:</label>
         <input type="text" name="idput" id="idput" placeholder="ID">
         <label for="titulo">Digite o título do livro:</label>
@@ -47,18 +49,18 @@
     </form>
     <div>
         <h2>Resultado da atualização:</h2>
-        <div class="atualizar"></div>
+        <div class="atualizar" id="resultadoAtt"></div>
     </div>
     <h1>Deletar um Livro:</h1>
     <!-- Formulário para javascript -->
-    <form action="" method="delete">
+    <form class="del-form" action="" method="delete">
         <label for="iddelete">Digite o ID do Livro:</label>
         <input type="text" name="iddelete" id="iddelete" placeholder="ID">
         <input type="submit" value="Deletar">
     </form>
     <div>
         <h2>Resultado da deleção:</h2>
-        <div class="deletar"></div>
+        <div class="deletar" id="resultadoDelecao"></div>
     </div>
     <script src="script.js"></script>
 </body>
